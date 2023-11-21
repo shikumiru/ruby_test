@@ -1,3 +1,5 @@
+# 入力した文字列を+で囲む
+
 S = gets.chomp
 S_length = S.length
 
