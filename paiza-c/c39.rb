@@ -1,10 +1,9 @@
-# 入力の読み込み
-expression = gets.chomp.strip
+E = gets.chomp.strip
 
 numbers = []
 current_number = 0
 
-expression.each_char do |i|
+E.each_char do |i|
   if i == '<'
     current_number += 10
   elsif i == '/'
@@ -15,7 +14,6 @@ expression.each_char do |i|
   end
 end
 
-# 最後の数も追加
 numbers << current_number
 
 result = numbers.sum
